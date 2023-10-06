@@ -26,6 +26,7 @@
 
     <distributionManagement>
         <repository>
+            <uniqueVersion>false</uniqueVersion>
             <id>TylerPear</id>
             <url>https://github.com/Tyler-Pear/sfg-pet-clinic.git</url>
         </repository>
