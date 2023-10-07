@@ -1,11 +1,12 @@
 package tyler.springframework.sfgpetclinic.services.map;
 
+import tyler.springframework.sfgpetclinic.services.PetService;
 import tyler.springframework.sfgpetclinic.model.Pet;
 import tyler.springframework.sfgpetclinic.services.CrudService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Set<Pet> findAll() {

@@ -1,12 +1,11 @@
 package tyler.springframework.sfgpetclinic.services.map;
 
+import tyler.springframework.sfgpetclinic.services.OwnerService;
 import tyler.springframework.sfgpetclinic.services.map.AbstractMapService;
 import tyler.springframework.sfgpetclinic.model.Owner;
-import tyler.springframework.sfgpetclinic.services.CrudService;
-
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -31,5 +30,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
