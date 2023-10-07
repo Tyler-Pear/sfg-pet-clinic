@@ -1,11 +1,13 @@
 package tyler.springframework.sfgpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import tyler.springframework.sfgpetclinic.services.PetService;
 import tyler.springframework.sfgpetclinic.model.Pet;
 import tyler.springframework.sfgpetclinic.services.CrudService;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override

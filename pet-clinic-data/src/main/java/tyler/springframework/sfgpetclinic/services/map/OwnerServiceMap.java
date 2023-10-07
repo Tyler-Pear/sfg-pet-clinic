@@ -1,10 +1,12 @@
 package tyler.springframework.sfgpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import tyler.springframework.sfgpetclinic.services.OwnerService;
 import tyler.springframework.sfgpetclinic.services.map.AbstractMapService;
 import tyler.springframework.sfgpetclinic.model.Owner;
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
