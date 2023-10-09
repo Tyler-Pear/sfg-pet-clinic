@@ -1,5 +1,6 @@
 package tyler.springframework.sfgpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import tyler.springframework.sfgpetclinic.model.Specialty;
 import tyler.springframework.sfgpetclinic.services.SpecialtyService;
@@ -7,6 +8,7 @@ import tyler.springframework.sfgpetclinic.services.SpecialtyService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
 
 
