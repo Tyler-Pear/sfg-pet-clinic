@@ -1,10 +1,12 @@
 package tyler.springframework.sfgpetclinic.services.map;
 
+import org.springframework.stereotype.Service;
 import tyler.springframework.sfgpetclinic.model.Visit;
 import tyler.springframework.sfgpetclinic.services.VisitService;
 
 import java.util.Set;
 
+@Service
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
 
